@@ -1,0 +1,62 @@
+.employee-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2;
+  padding: 10px;
+}
+
+.thumbnail {
+    width: 340px;
+    background: linear-gradient(145deg, #004279, #f2f2f2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .thumbnail:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .thumbnail .caption {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .thumbnail .caption h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .thumbnail .list-group-item {
+    background-color: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+  }
+
+  .load-more-btn {
+    width: 90vw;
+    max-width: 600px; /* Opcional: para limitar el tamaño máximo */
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente y añade un margen superior/inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .list-group-item{
+    font-weight:bold;
+  }
